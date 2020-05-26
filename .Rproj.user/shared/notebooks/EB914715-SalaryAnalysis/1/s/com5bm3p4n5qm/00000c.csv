@@ -1,0 +1,2 @@
+"0","girl_higher107_difference<-girl_higher107[order(girl_higher107$`大學-女/男`,decreasing = T),]"
+"0","girl_higher107_difference##107年女生薪資比男生多之差異由大到小"

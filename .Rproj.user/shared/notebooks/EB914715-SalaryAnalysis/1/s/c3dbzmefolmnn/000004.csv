@@ -1,0 +1,2 @@
+"0","s107_gra_higher_top10<-head(s107_gra_higher[order(s107_gra_higher$`研究所-薪資/大學-薪資`,decreasing = T),],10)"
+"0","s107_gra_higher_top10"

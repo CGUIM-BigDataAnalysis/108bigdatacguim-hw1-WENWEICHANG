@@ -1,0 +1,3 @@
+"0","join104107$salary_increase_rate<-join104107$`大學-薪資.x`/join104107$`大學-薪資.y`"
+"0","salary_increase_top10<-head(join104107[order(join104107$salary_increase_rate,decreasing = T),],10)"
+"0","salary_increase_top10"

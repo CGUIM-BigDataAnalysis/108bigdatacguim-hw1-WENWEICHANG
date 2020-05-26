@@ -1,0 +1,7 @@
+"0","salary107EC$`研究所-薪資`<-gsub(""—|…"","""",salary107EC$`研究所-薪資`)"
+"0","salary107EC$`大學-薪資`<-gsub(""—|…"","""",salary107EC$`大學-薪資`)"
+"0","salary107EC$`研究所-薪資`<-as.numeric(salary107EC$`研究所-薪資`)"
+"0","salary107EC$`大學-薪資`<-as.numeric(salary107EC$`大學-薪資`)"
+"0","salary107EC$`研究所-薪資/大學-薪資`<-salary107EC$`研究所-薪資`/salary107EC$`大學-薪資`"
+"0","s107_gra_higher<-filter(salary107EC,`研究所-薪資/大學-薪資`>1)"
+"0","s107_gra_higher"

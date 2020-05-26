@@ -1,0 +1,4 @@
+"0","girl_higher104<-filter(salary104EC,salary104EC$`大學-女/男`>100)"
+"0","girl_higher107<-filter(salary107EC,salary107EC$`大學-女/男`>100)"
+"0","girl_higher104_difference<-girl_higher104[order(girl_higher104$`大學-女/男`,decreasing = T),]"
+"0","girl_higher104_difference##104年女生薪資比男生多之差異由大到小"

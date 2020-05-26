@@ -1,0 +1,49 @@
+"0","library(readr)"
+"0","library(dplyr)"
+"0","salary104EC <- read_csv(""http://ipgod.nchc.org.tw/dataset/b6f36b72-0c4a-4b60-9254-1904e180ddb1/resource/98d5094d-7481-44b5-876a-715a496f922c/download/a17000000j-020066-mah.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¦~«× = [32mcol_double()[39m,
+  ¤jÂ¾·~§O = [31mcol_character()[39m,
+  `¸g±`©ÊÁ~¸ê-Á~¸ê` = [32mcol_double()[39m,
+  `¸g±`©ÊÁ~¸ê-¤k/¨k` = [31mcol_character()[39m,
+  `°ê¤¤¤Î¥H¤U-Á~¸ê` = [31mcol_character()[39m,
+  `°ê¤¤¤Î¥H¤U-¤k/¨k` = [31mcol_character()[39m,
+  `°ª¤¤©Î°ªÂ¾-Á~¸ê` = [31mcol_character()[39m,
+  `°ª¤¤©Î°ªÂ¾-¤k/¨k` = [31mcol_character()[39m,
+  `±M¬ì-Á~¸ê` = [31mcol_character()[39m,
+  `±M¬ì-¤k/¨k` = [31mcol_character()[39m,
+  `¤j¾Ç-Á~¸ê` = [31mcol_character()[39m,
+  `¤j¾Ç-¤k/¨k` = [31mcol_character()[39m,
+  `¬ã¨s©Ò¤Î¥H¤W-Á~¸ê` = [31mcol_character()[39m,
+  `¬ã¨s©Ò¤Î¥H¤W-¤k/¨k` = [31mcol_character()[39m
+)
+"
+"0","salary107EC <- read_csv(""C:/Program Files/R/R-3.6.3/X107EC.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¦~«× = [32mcol_double()[39m,
+  ¤jÂ¾·~§O = [31mcol_character()[39m,
+  `¸g±`©ÊÁ~¸ê-Á~¸ê` = [31mcol_character()[39m,
+  `¸g±`©ÊÁ~¸ê-¤k/¨k` = [31mcol_character()[39m,
+  `°ê¤¤¤Î¥H¤U-Á~¸ê` = [31mcol_character()[39m,
+  `°ê¤¤¤Î¥H¤U-¤k/¨k` = [31mcol_character()[39m,
+  `°ª¤¤©Î°ªÂ¾-Á~¸ê` = [31mcol_character()[39m,
+  `°ª¤¤©Î°ªÂ¾-¤k/¨k` = [31mcol_character()[39m,
+  `±M¬ì-Á~¸ê` = [31mcol_character()[39m,
+  `±M¬ì-¤k/¨k` = [31mcol_character()[39m,
+  `¤j¾Ç-Á~¸ê` = [31mcol_character()[39m,
+  `¤j¾Ç-¤k/¨k` = [31mcol_character()[39m,
+  `¬ã¨s©Ò-Á~¸ê` = [31mcol_character()[39m,
+  `¬ã¨s©Ò-¤k/¨k` = [31mcol_character()[39m
+)
+"
+"0","salary104EC$å¤§è·æ¥­åˆ¥<-NULL"
+"0","salary104EC$å¤§è·æ¥­åˆ¥<-salary107EC$å¤§è·æ¥­åˆ¥"
+"0",""
+"0","join104107<-inner_join(salary107EC,salary104EC,by=c(""å¤§è·æ¥­åˆ¥""))"
+"0",""
+"0","join104107$`å¤§å­¸-è–ªè³‡.x`<-gsub(""â€”|â€¦"","""",join104107$`å¤§å­¸-è–ªè³‡.x`)"
+"0","join104107$`å¤§å­¸-è–ªè³‡.y`<-gsub(""â€”|â€¦"","""",join104107$`å¤§å­¸-è–ªè³‡.y`)"
+"0","join104107$`å¤§å­¸-è–ªè³‡.x`<-as.numeric(join104107$`å¤§å­¸-è–ªè³‡.x`)"
+"0","join104107$`å¤§å­¸-è–ªè³‡.y`<-as.numeric(join104107$`å¤§å­¸-è–ªè³‡.y`)"
